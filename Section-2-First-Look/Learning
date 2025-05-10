@@ -1,0 +1,11 @@
+THE RISE OF SINGLE PAGE APPLICATIONS
+    Old Way -> Server Side Rendering 
+    Modern -> Client Side Rendering (without the page reloading)
+
+
+Questions (Why, When, How)
+
+1. Why do front-end frameworks exist?
+    - Keeping a user interface in sync with data is really hard and a lot work (Front-end frame work solve this problem and take hard
+    work awau from developers)
+    - enfore correct way more clear code and more consistent
