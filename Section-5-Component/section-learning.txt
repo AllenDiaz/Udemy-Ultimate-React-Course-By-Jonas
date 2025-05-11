@@ -3,6 +3,8 @@ Components
 -Building blocks of user interface
 -Piece of UI that has its own data, logic and appearance(how it works and how it's look)
 -Components can be reused, nested inside each other, and pass data between them
+-SPA 
+    - Component compose of data logic and appearance
 
 What is JSX?
  -JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with React to describe what the UI should look like. It lets you write HTML-like code directly in your JavaScript files.
