@@ -1,0 +1,5 @@
+Components
+-Reacts is entirely made of Components
+-Building blocks of user interface
+-Piece of UI that has its own data, logic and appearance(how it works and how it's look)
+-Components can be reused, nested inside each other, and pass data between them
