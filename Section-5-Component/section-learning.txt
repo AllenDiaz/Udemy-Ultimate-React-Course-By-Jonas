@@ -8,3 +8,81 @@ Components
 
 What is JSX?
  -JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with React to describe what the UI should look like. It lets you write HTML-like code directly in your JavaScript files.
+
+---
+
+## 📘 General JSX Rules
+
+JSX (JavaScript XML) is a syntax extension for JavaScript used in React to describe UI components. It looks like HTML but behaves differently under the hood.
+
+### ✅ Core Rules
+
+- **One Parent Element**: JSX must return a single root element.
+    
+    ```jsx
+    return (
+      <div>
+        <h1>Hello</h1>
+        <p>World</p>
+      </div>
+    );
+    
+    ```
+    
+- **Use `className` Instead of `class`**:
+    
+    ```jsx
+    <div className="container">...</div>
+    
+    ```
+    
+- **Use `camelCase` for Attributes**:
+    - `onclick` → `onClick`
+    - `tabindex` → `tabIndex`
+- **Self-Closing Tags Required**:
+    
+    ```jsx
+    <img src="logo.png" alt="Logo" />
+    
+    ```
+    
+- **JavaScript Expressions in `{}`**:
+    
+    ```jsx
+    <h1>{user.name}</h1>
+    
+    ```
+    
+- **Fragments for Grouping Without Extra DOM**:
+    
+    ```jsx
+    <>
+      <h1>Title</h1>
+      <p>Paragraph</p>
+    </>
+    
+    ```
+    
+- **Boolean Attributes Must Be Explicit**:
+    
+    ```jsx
+    <input type="checkbox" checked={true} />
+    
+    ```
+    
+
+---
+
+## 🔍 JSX vs HTML: Key Differences
+
+| Feature | HTML | JSX |
+| --- | --- | --- |
+| Attribute Naming | `class`, `for`, `onclick` | `className`, `htmlFor`, `onClick` |
+| Boolean Attributes | `disabled`, `checked` | `disabled={true}`, `checked={false}` |
+| JavaScript Integration | Not supported | `{}` for expressions |
+| Self-Closing Tags | Optional | Required for void elements |
+| Comments | `<!-- comment -->` | `{/* comment */}` |
+| Style Attribute | String | Object (`style={{ color: 'red' }}`) |
+| DOM Nesting Rules | Flexible | Strict (e.g., `<tr>` must be inside `<table>`) |
+
+---
